@@ -1,0 +1,91 @@
+.navbar {
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  position: sticky;
+  min-height: 80px;
+  top: 0;
+  z-index: 999;
+  font-size: 1.2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.navbar-logo-link {
+  color: #fff;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.fa-globe-europe {
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.select option {
+  color: #000;
+}
+
+.fa-globe {
+  color: #fff;
+  padding-top: 0.5rem;
+}
+
+.search-wrapper,
+.languages {
+  display: flex;
+  height: 40px;
+  background: #1e232b;
+  border: 1px solid rgba(155, 155, 155, 0.2);
+  border-radius: 2px;
+  padding: 2px;
+}
+
+.search,
+.select {
+  height: 100%;
+  width: 100%;
+  padding: 0 10px;
+  color: #fff;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.navbar .search-wrapper .search:focus {
+  outline: none;
+}
+.navbar .search-wrapper button {
+  padding: 0 15px;
+  background: #ff3d00;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .navbar-logo-link {
+    font-size: 1.5rem;
+    margin: 5px 0 5px 0;
+  }
+  .fa-globe-europe {
+    font-size: 1.4rem;
+  }
+  .search-wrapper,
+  .languages {
+    margin: 3px 0 3px 0;
+    height: 30px;
+  }
+  .fa-globe {
+    padding-top: 0.1rem;
+  }
+}
